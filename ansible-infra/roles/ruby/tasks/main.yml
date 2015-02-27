@@ -1,0 +1,12 @@
+---
+- name: apt_repository repo='ppa:brightbox/ruby-ng' mode=0644 update_cache=yes state=present
+  apt_repository: repo='ppa:brightbox/ruby-ng' mode=0644 update_cache=yes state=present
+  sudo: yes
+
+- name: apt name=ruby2.1 state=present
+  apt: name=ruby2.1 state=present
+  sudo: yes
+
+- name: apt name=bundler state=present
+  apt: name=bundler state=present
+  sudo: yes
