@@ -2,3 +2,6 @@
 - hosts: my-vagrant-box
   roles:
     - common
+    - role: rbenv
+      rbenv_ruby_version: 2.1.5
+      sudo: yes
