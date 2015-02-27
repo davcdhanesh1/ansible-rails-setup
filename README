@@ -1,0 +1,26 @@
+
+Hey hi, 
+
+Before setting up this box, 
+You need to follow few steps to prove that you are cool enough.
+  
+  1. Install Ansible on your local box.
+  2. Install vagrant and VirtualBox.
+ 
+How to create base vagrant box:
+  1. You better grab basic vagrant documentation. It is very easy. Even a stupid like Dhanesh could do it with ease.
+   
+How to provision box using ansible code:
+  
+  1. cd /ansible-infra
+  2. ansible-playbook -k site.yaml ( -k is ask-password option, use it only if your provisioning particular box first time in your life,
+                                      to setup SSH key authorization )
+  3. When you will run this command, You will be asked for password. Enter your guest box's password. In this case it will be 'vagrant'
+     provided that you have setup you default box with Vagrantfile from the source.
+  4. That's it your good to go.
+
+What Magic will this box do:
+  1. For that go and see infra code yourself.
+
+### Warnings ###
+  1. Lots of places have hardcoded values so please don't touch them unless you know what you are doing

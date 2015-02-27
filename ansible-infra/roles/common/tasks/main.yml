@@ -1,0 +1,4 @@
+# tasks file for roles/common
+---
+  - include: ssh_authorization.yml
+  - include: git.yml

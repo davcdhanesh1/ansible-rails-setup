@@ -1,0 +1,14 @@
+---
+- name: Installing packages neccessary for Git installation
+  apt: name=software-properties-common state=present
+  apt: name=python-software-properties state=present
+  sudo: yes
+
+- name: Add repo for Git installation
+  apt_repository: repo='ppa:git-core/ppa' mode=0644 update_cache=yes
+  sudo: yes
+
+- name: Installing latest version of Git
+  apt: name=git state=present
+  sudo: yes
+
