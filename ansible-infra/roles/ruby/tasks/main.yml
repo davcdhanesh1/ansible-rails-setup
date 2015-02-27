@@ -7,6 +7,6 @@
   apt: name=ruby2.1 state=present
   sudo: yes
 
-- name: apt name=bundler state=present
-  apt: name=bundler state=present
+- name: install bundler with ruby2.1
+  command: gem2.1 install bundler
   sudo: yes
