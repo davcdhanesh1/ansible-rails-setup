@@ -12,8 +12,10 @@ How to create base vagrant box:
 How to provision box using ansible code:
   
   1. cd /ansible-infra
-  2. ansible-playbook -k site.yaml ( -k is ask-password option, use it only if your provisioning particular box first time in your life,
-                                      to setup SSH key authorization )
+  2. ansible-playbook -k site.yaml -i hosts ( -k is ask-password option, use it only if your provisioning particular box first time in your life,
+                                              to setup SSH key authorization 
+                                              -i is to specify Inventory (Ansible concept) i.e. hosts )
+
   3. When you will run this command, You will be asked for password. Enter your guest box's password. In this case it will be 'vagrant'
      provided that you have setup you default box with Vagrantfile from the source.
   4. That's it your good to go.
