@@ -4,4 +4,5 @@
   roles:
     - common
     - git
-    - ruby
+    - role: ruby
+      sudo: yes

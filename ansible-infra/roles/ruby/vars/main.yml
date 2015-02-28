@@ -1,2 +1,6 @@
 ---
 # vars file for roles/ruby
+ruby_2_1_executable_gem_path: /usr/bin/gems/2.1/bin
+system_bundle_path: /usr/bin/bundle
+system_bundler_path: /usr/bin/bundler
+
