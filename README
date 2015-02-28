@@ -8,6 +8,8 @@ You need to follow few steps to prove that you are cool enough.
  
 How to create base vagrant box:
   1. You better grab basic vagrant documentation. It is very easy. Even a stupid like Dhanesh could do it with ease.
+  2. For basebox image, use this link: https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box
+  3. set an environment variable 'vagrant_base_box_url' pointing towards the local path where you have downloaded vagrant box
    
 How to provision box using ansible code:
   
