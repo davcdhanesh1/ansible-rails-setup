@@ -1,11 +1,6 @@
 ---
-- name: Installing common base packages
-  apt: name=software-properties-common state=present update_cache=yes
-  apt: name=python-software-properties state=present update_cache=yes
-  sudo: yes
+  - include: ssh-authorization.yml
+  - include: package-managers.yml
+  - include: native-xml-parsers.yml 
 
-- name: Installing 
-  apt: name=libxslt-dev state=present 
-  apt: name=libxml2-dev state=present 
-  apt: name=zlib1g-dev state=present
-  sudo: yes
+
