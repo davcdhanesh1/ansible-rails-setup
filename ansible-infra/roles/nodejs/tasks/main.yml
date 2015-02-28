@@ -1,0 +1,5 @@
+---
+# tasks file for ansible-infra/roles/nodejs
+- name: apt name=nodejs insta
+  apt: name=nodejs state=present
+  sudo: yes

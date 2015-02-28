@@ -6,3 +6,4 @@
     - git
     - role: ruby
       sudo: yes
+    - nodejs
