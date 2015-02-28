@@ -1,21 +1,28 @@
 ---
+
 - name: apt_repository repo='ppa:brightbox/ruby-ng' mode=0644 update_cache=yes state=present
   apt_repository: repo='ppa:brightbox/ruby-ng' mode=0644 update_cache=yes state=present
+  sudo: yes
 
 - name: apt name=ruby2.1 state=present
   apt: name=ruby2.1 state=present
+  sudo: yes
 
 - name: mkdir -p {{ ruby_2_1_executable_gem_path }}
   file: path={{ ruby_2_1_executable_gem_path }} state=directory
+  sudo: yes
 
 - name: command gem2.1 install bundler --bindir {{ ruby_2_1_executable_gem_path }} 
   command: gem2.1 install bundler --bindir {{ ruby_2_1_executable_gem_path }}
+  sudo: yes
 
 - name: file src="{{ ruby_2_1_executable_gem_path }}/bundle"  dest={{ system_bundle_path }} mode=0755 owner=root group=root state=link
   file: src="{{ ruby_2_1_executable_gem_path }}/bundle"  dest={{ system_bundle_path }} mode=0755 owner=root group=root state=link
+  sudo: yes
 
 - name: file src="{{ ruby_2_1_executable_gem_path }}/bundler"  dest={{ system_bundler_path }} mode=0755 owner=root group=root state=link
   file: src="{{ ruby_2_1_executable_gem_path }}/bundler"  dest={{ system_bundler_path }} mode=0755 owner=root group=root state=link
+  sudo: yes
   
 
 
