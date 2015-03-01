@@ -1,4 +1,4 @@
 ---
 - name: Installing supporting package managers
-  apt: name=software-properties-common state=present update_cache=yes
-  apt: name=python-software-properties state=present update_cache=yes
+  apt: name=software-properties-common state=present force=yes
+  apt: name=python-software-properties state=present force=yes

@@ -1,5 +1,5 @@
 ---
-- name: Installing 
+- name: Installing native xml parsing libraries
   apt: name=libxslt-dev state=present 
   apt: name=libxml2-dev state=present 
   apt: name=zlib1g-dev state=present
