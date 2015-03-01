@@ -10,3 +10,5 @@
       sudo: yes
     - role: nodejs
       sudo: yes
+    - role: postgresql
+      sudo: yes

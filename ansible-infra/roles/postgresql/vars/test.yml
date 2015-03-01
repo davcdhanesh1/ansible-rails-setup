@@ -1,0 +1,8 @@
+---
+postgresql_users:
+  - name: foo1
+    pass: bar
+
+postgresql_user_privileges:
+  - name: foo
+    role_attr_flags: 'bar'
