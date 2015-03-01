@@ -1,4 +1,6 @@
 ---
-- name: Installing supporting package managers
+- name: apt name=software-properties-common state=present force=yes
   apt: name=software-properties-common state=present force=yes
+
+- name: apt name=python-software-properties state=present force=yes
   apt: name=python-software-properties state=present force=yes
