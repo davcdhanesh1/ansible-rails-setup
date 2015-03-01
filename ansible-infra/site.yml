@@ -2,7 +2,11 @@
 - hosts: my-vagrant-box
  
   roles:
-    - common
-    - git
-    - ruby
-    - nodejs
+    - role: common
+      sudo: yes
+    - role: git
+      sudo: yes
+    - role: ruby
+      sudo: yes
+    - role: nodejs
+      sudo: yes
