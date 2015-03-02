@@ -1,9 +1,9 @@
 ---
-- name: apt name=libxslt-dev state=present 
+- name: Installing libxsl-dev
   apt: name=libxslt-dev state=present 
 
-- name: apt name=libxml2-dev state=present 
+- name: Installing libxml2-dev
   apt: name=libxml2-dev state=present 
 
-- name: apt name=zlib1g-dev state=present
+- name: Installing zlib1g-dev
   apt: name=zlib1g-dev state=present

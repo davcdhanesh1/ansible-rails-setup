@@ -1,6 +1,6 @@
 ---
-- name: apt name=software-properties-common state=present force=yes
+- name: Installing software-properties-common
   apt: name=software-properties-common state=present force=yes
 
-- name: apt name=python-software-properties state=present force=yes
+- name: Installing python-software-properties
   apt: name=python-software-properties state=present force=yes
