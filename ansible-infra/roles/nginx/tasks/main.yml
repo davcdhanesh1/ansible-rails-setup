@@ -14,5 +14,5 @@
 - name: Install nginx
   action: apt pkg={{ item }} state=installed
   with_items:
-   - nginx-extras 
+   - nginx-full 
    - passenger
