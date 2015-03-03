@@ -24,11 +24,14 @@
     group: root
     owner: root
     mode: 0644
+  
+- name: Removing any default server entry
+  command: rm -rf /etc/nginx/sites-enabled/default
 
 - name: Setting up site, by adding Server entry in sites-enabled
   template:
     src: helpper
-    dest: /etc/nginx/sites-enabled/default
+    dest: /etc/nginx/sites-enabled/helpper
     group: root
     owner: root
     mode: 0644

@@ -7,3 +7,6 @@
 
 - name: Creating a deploy user for deployment
   user: name=deploy state=present group=deployers
+
+- name: Creating a deployment folder
+  file: path=/home/deploy/application mode=0775 owner=deploy group=deployers state=directory

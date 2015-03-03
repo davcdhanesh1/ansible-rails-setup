@@ -31,19 +31,21 @@ What Magic will this box do:
 
 ### How To Run: A six step process ###
 
- 1. Everything is set up for you after this, Just go to vagrant box and clone the Rails code in your home directory in application folder. ( i.e. in /home/vagrant )
-    Like this "git clone <repo-url> application".
+ 1. Become 'deploy' user
+    sudo su - deploy 
+    ( This should take you to the directory /home/deploy, do pwd if want to)
+
+ 2. Clone the code in application directory that is present there.
+    git clone <git-repo url> application
  
- 2. After this run cd into 'application' directory. 
-    run, "bundle install --path vendor/bundle"
+ 2. cd into 'application' directory. 
+    "bundle install --path vendor/bundle"
  
- 3. After this in the same directory,
+ 3. In the same ( application ) directory,
     run, "bundle exec rake db:create db:migrate db:seed db:test:prepare"
     (For this to run correctly make sure that, in your application's database.yml file you have, username: development and password: password for development environment ) 
 
  4. Then ,
     run sudo service nginx restart
  
- 5. Try to hit the application's url from host browser like this "192.168.33.10" ( This is the static ip of your vagrant box )
-
- 6. Well there is no step 6.
+ 6. Try to hit the application's url from host browser like this "192.168.33.10" ( This is the static ip of your vagrant box )

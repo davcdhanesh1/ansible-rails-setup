@@ -4,6 +4,6 @@ server {
   server_name {{ server_ip_address }};
   passenger_enabled on;
   passenger_app_env development;
-  root /home/vagrant/application/public;
+  root /home/deploy/application/public;
 
 }
