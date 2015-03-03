@@ -23,7 +23,7 @@
     dest: /etc/nginx/nginx.conf
     group: root
     owner: root
-    mode: 0544
+    mode: 0644
 
 - name: Setting up site, by adding Server entry in sites-enabled
   template:
@@ -31,4 +31,4 @@
     dest: /etc/nginx/sites-enabled/default
     group: root
     owner: root
-    mode: 0544
+    mode: 0644

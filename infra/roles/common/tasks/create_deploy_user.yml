@@ -7,6 +7,3 @@
 
 - name: Creating a deploy user for deployment
   user: name=deploy state=present group=deployers
-
-- name: Creating a directorty at deployment path
-  file: path=/home/vagrant/application state=directory owner=deploy group=deployers mode=0744
