@@ -6,6 +6,9 @@
 - name: Installing ruby2.1
   apt: name=ruby2.1 state=present
 
+- name: Installing ruby2.1-dev
+  apt: name=ruby2.1-dev state=present
+
 - name: mkdir -p {{ ruby_2_1_executable_gem_path }}
   file: path={{ ruby_2_1_executable_gem_path }} state=directory
 
