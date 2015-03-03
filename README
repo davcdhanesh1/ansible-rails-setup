@@ -31,7 +31,7 @@ What Magic will this box do:
 
 ### How To Run: A six step process ###
 
- 1. Everything is set up for you after this, Just got to vagrant box and clone the Rails code in your home directory in application folder. ( i.e. in /home/vagrant )
+ 1. Everything is set up for you after this, Just go to vagrant box and clone the Rails code in your home directory in application folder. ( i.e. in /home/vagrant )
     Like this "git clone <repo-url> application".
  
  2. After this run cd into 'application' directory. 
@@ -44,6 +44,6 @@ What Magic will this box do:
  4. Then ,
     run sudo service nginx restart
  
- 5. Try to hit the application's url from host browser like this "127.0.0.1:8080".
+ 5. Try to hit the application's url from host browser like this "192.168.33.10" ( This is the static ip of your vagrant box )
 
- 6. Well there is not step 6.
+ 6. Well there is no step 6.

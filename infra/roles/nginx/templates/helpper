@@ -1,9 +1,9 @@
 server {
 
   listen 80 default_server;
-  server_name localhost;
+  server_name {{ server_ip_address }};
   passenger_enabled on;
   passenger_app_env development;
-  root /home/vagrant/application;
+  root /home/vagrant/application/public;
 
 }
