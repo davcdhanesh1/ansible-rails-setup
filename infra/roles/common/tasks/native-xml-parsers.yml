@@ -7,3 +7,6 @@
 
 - name: Installing zlib1g-dev
   apt: name=zlib1g-dev state=present
+
+- name: Installing libsqlite3-dev
+  apt: name=libsqlite3-dev state=present
