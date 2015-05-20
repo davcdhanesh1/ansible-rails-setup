@@ -14,3 +14,5 @@
       sudo: yes
     - role: nginx
       sudo: yes
+    - role: crushlovely.imagemagick
+      sudo: yes
